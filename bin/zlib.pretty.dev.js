@@ -1,7 +1,7 @@
 /* zlib-module.js  [ https://github.com/guyoung/zlib-module.js ] The MIT License */
 /** @license zlib.js 2012 - imaya [ https://github.com/imaya/zlib.js ] The MIT License */
 
-(function() {'use strict';var COMPILED = false;
+(function() {var COMPILED = false;
 var goog = goog || {};
 goog.global = (typeof exports!=="undefined")?exports:((typeof self!=="undefined")?self:window);
 goog.DEBUG = true;
