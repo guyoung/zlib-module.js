@@ -8,26 +8,31 @@
 
 <body>
 
+    <!--
     <script src="../../bin/gzip.min.js"></script>
     <script src="../../bin/gunzip.min.js"></script>
+    -->
+    <script src="https://unpkg.com/zlib-module-js/bin/gzip.min.js"></script>
+    <script src="https://unpkg.com/zlib-module-js/bin/gunzip.min.js"></script>
+
     <script>
         function stringToArrayBuffer(str) {
-            const encoder = new TextEncoder();
-            const uint8Array = encoder.encode(str);
-            return uint8Array;
+            const encoder = new TextEncoder()
+            const uint8Array = encoder.encode(str)
+            return uint8Array
         }
-
 
         function arrayBufferToString(buffer) {
-            const decoder = new TextDecoder();
-            return decoder.decode(buffer);
+            const decoder = new TextDecoder()
+            return decoder.decode(buffer)
         }
 
-        const gzip_module = new Zlib.Gzip(stringToArrayBuffer("hello"));
+        const gzip_module = new Zlib.Gzip(stringToArrayBuffer("hello"))
         var compressed = gzip_module.compress();
         console.log(compressed)
-        var gunzip_module = new Zlib.Gunzip(compressed);
-        var plain = gunzip_module.decompress();
+
+        var gunzip_module = new Zlib.Gunzip(compressed)
+        var plain = gunzip_module.decompress()
         console.log(plain)
         console.log(arrayBufferToString(plain)) //hello
     </script>

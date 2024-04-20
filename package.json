@@ -1,13 +1,18 @@
 {
+ 
+  "name": "zlib-module-js",
+  "description": "compact zlib, deflate, inflate, zip library in JavaScript, support CommonJS",
+  "version": "0.3.3",
+  "license": "MIT",
+  "main": "./bin/node-zlib.js",
+  "keywords": [
+    "zlib",
+    "commonjs"    
+  ],
   "author": {
     "name": "guyoung"
 
   },
-  "name": "zlib-module-js",
-  "description": "compact zlib, deflate, inflate, zip library in JavaScript CommonJS module",
-  "version": "0.3.2",
-  "license": "MIT",
-  "main": "./bin/node-zlib.js",
   "homepage": "https://github.com/guyoung/zlib-module.js",
   "repository": {
     "type": "git",
