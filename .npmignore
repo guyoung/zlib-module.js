@@ -3,3 +3,6 @@ npm-debug.log
 travis.log
 .vscode
 .github
+
+examples/node/package.json
+examples/node/package-lock.json

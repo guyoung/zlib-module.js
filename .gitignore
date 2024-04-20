@@ -6,3 +6,6 @@ travis.log
 .*.swp
 **/*.DS_Store
 .node-version
+
+examples/node/package.json
+examples/node/package-lock.json
